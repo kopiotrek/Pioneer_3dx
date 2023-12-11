@@ -3,7 +3,7 @@ services:
   pioneer_simulation:
     build:
       context: ./
-      dockerfile: docker/pioneer/Dockerfile
+      dockerfile: docker/simulation/Dockerfile
     image: pioneer_simulation
     user: ros
     network_mode: host
@@ -22,4 +22,4 @@ services:
       - /dev/dri:/dev/dri
     stdin_open: true 
     tty: true
-    command:  ros2 launch pioneer_cyton_description spawn_robot.launch.py
+    command:  ros2 launch pioneer_bringup spawn_robot.launch.py

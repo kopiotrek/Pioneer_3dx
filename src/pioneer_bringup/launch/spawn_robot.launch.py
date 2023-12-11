@@ -16,7 +16,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    package_name = 'pioneer_cyton_description'
+    package_name = 'pioneer_bringup'
     gazebo_ros_package_dir = get_package_share_directory('gazebo_ros')
     world_file_name = 'test_zone_v1.world'
 
